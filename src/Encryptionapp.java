@@ -34,15 +34,16 @@ public class Encryptionapp {
 
     public static void main(String[] args) {
         Payload payload = new Payload(
-                "20240131234",
-                "09/07/2024",
-                "0501115310",
-                "0500592358",
+                "9010947547581",
+                "13-08-2024",
+                "000156628961000000000001",
+                "0500451628",
                 "NGN",
-                "1000",
-                "Testing",
+                "1",
+                "R-1094754759",
                 "Samuel"
         );
+// R-1092378905/:testfromRemita:ZENITH:107259892-:107259892
 
         EncryptionHelper encryptionHelper = new EncryptionHelper();
         String payloadJson = new Gson().toJson(payload);
@@ -55,7 +56,7 @@ public class Encryptionapp {
         String decryptedPayload = encryptionHelper.decryptResponse(encryptedPayload);
         System.out.println("Decrypted Payload: " + decryptedPayload);
 
-        String decryptedResult = encryptionHelper.decryptResponse("EsxChzwQOeLJOU5xcECjtkGN0jOcdnyJbSk3r3IHYPZAraueHzgwMEV6y5R5ufW20/z8vk+cYYsxpJeZNMMaxJXXVSAYQQ45oFA8Rf5r4txu81Exz20INedMHPEj7iTrhh80eEkA0xl1GAnu/BW20EXkSMFrY8winXg8t1T4CNU=");
+        String decryptedResult = encryptionHelper.decryptResponse("vrbwvVrfPyOKCCEa9QaKL/kpUA8MaRE9EFFQTv30FkC1FXaFmZAbCWdFEUGsRc2gAqZLaeL28Wn+BeodMZIwj+ECyStuRQ1qTUkI8t/bVizY3QDinyzuXwBMkf1Cl3iHKMr2Vy76oAhfckgHC7Ku6A==");
         System.out.println("Decrypted Result: " + decryptedResult);
     }
 
@@ -86,9 +87,9 @@ public class Encryptionapp {
     // ... (Payload class remains the same)
 
     public static class EncryptionHelper {
-        private static final String PASS_PHRASE = "Av2345fgbnhes78@#dn";
-        private static final String SALT_VALUE = "Dfcvb542*&sdcf87r";
-        private static final String INIT_VECTOR = "Mked098lasn34mg6";
+        private static final String PASS_PHRASE = "Xp1926fgbnrem78@#fq";
+        private static final String SALT_VALUE = "Tdfgb542*&sdch12u";
+        private static final String INIT_VECTOR = "Lopd098lasn34sc8";
         //private static final byte[] INIT_VECTOR = new byte[]{0x4D, 0x6B, 0x65, 0x64, 0x30, 0x39, 0x38, 0x6C, 0x61, 0x73, 0x6E, 0x33, 0x34, 0x6D, 0x67, 0x36};
 
         static final int PASSWORD_ITERATIONS = 2;
